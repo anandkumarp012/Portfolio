@@ -948,3 +948,334 @@ body{
         height: 120px;
     }
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .home {
+        padding: 70px 5% 0;
+    }
+    
+    .about {
+        padding: 100px 5%;
+    }
+    
+    .portfolio {
+        padding: 100px 5% 0;
+    }
+    
+    .contact {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 5%;
+    }
+    
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .home-content {
+        order: 2;
+    }
+    
+    .home-img {
+        order: 1;
+        max-width: 400px;
+        height: 400px;
+    }
+    
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-img {
+        margin-bottom: 2rem;
+    }
+    
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-text {
+        text-align: center;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        background: #181f2a;
+        transition: 0.3s;
+    }
+    
+    .navbar.active {
+        top: 100%;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .home-content h1 {
+        font-size: 40px;
+    }
+    
+    .home-content h3 {
+        font-size: 24px;
+    }
+    
+    .about-text h2 {
+        font-size: 40px;
+    }
+    
+    .about-text h4 {
+        font-size: 24px;
+    }
+    
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .radial-bars {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-img {
+        max-width: 300px;
+        height: 300px;
+    }
+    
+    .home-content h1 {
+        font-size: 32px;
+    }
+    
+    .home-content h3 {
+        font-size: 20px;
+    }
+    
+    .about-img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-text h2 {
+        font-size: 32px;
+    }
+    
+    .about-text h4 {
+        font-size: 20px;
+    }
+    
+    .contact-text h2 {
+        font-size: 40px;
+    }
+    
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    
+    .contact-text p {
+        font-size: 16px;
+    }
+    
+    .contact-form .send {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+
+/* Add hamburger menu for mobile */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Fix for mobile navigation */
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        background: #181f2a;
+        transition: 0.3s;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    
+    .navbar.active {
+        top: 100%;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+/* Fix for mobile contact form */
+@media (max-width: 768px) {
+    .contact-form form {
+        width: 100%;
+    }
+    
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+}
+
+/* Fix for mobile portfolio */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .row {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+/* Fix for mobile skills section */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .radial-bars {
+        grid-template-columns: 1fr;
+    }
+    
+    .radial-bars .radial-bar {
+        width: 200px;
+        height: 200px;
+        margin: 1rem auto;
+    }
+}
+
+/* Fix for mobile services section */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-list div {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+/* Fix for mobile about section */
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 5%;
+    }
+    
+    .about-img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .about-text {
+        padding: 0 20px;
+    }
+}
+
+/* Fix for mobile home section */
+@media (max-width: 768px) {
+    .home {
+        padding: 100px 5% 0;
+    }
+    
+    .home-content {
+        padding: 0 20px;
+    }
+    
+    .home-sci {
+        justify-content: center;
+    }
+}
+
+/* Fix for mobile header */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+    
+    .logo {
+        font-size: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Fix for mobile contact icons */
+@media (max-width: 768px) {
+    .contact-icons {
+        justify-content: center;
+    }
+}
+
+/* Fix for mobile last text */
+@media (max-width: 768px) {
+    .last-text p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+}
+
+/* Fix for mobile top button */
+@media (max-width: 768px) {
+    .top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    
+    .top i {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
